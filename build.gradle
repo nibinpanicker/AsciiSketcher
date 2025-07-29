@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'io.sedai.evaluation'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'de.siegmar:fastcsv:4.0.0'
+}
+
+application {
+    mainClass = 'io.sedai.evaluation.geo2ascii.AsciiSketcher'
+}
+
+test {
+    useJUnitPlatform()
+}
